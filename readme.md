@@ -11,7 +11,6 @@ http://localhost:3000/mean?nums=1,3,5,6
 
 
 **Example of bad route:**  
-
 http://localhost:3000/mode?nums=1,3,5,foo  
 In this case, it will return an error
 
