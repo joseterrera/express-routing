@@ -43,3 +43,48 @@ function findMode(arr) {
    }
    return result;
  }
+
+ /**
+  * find the average mean: add up all the numbers and then divide by the number of numbers
+  */
+ function findMean(nums) {
+   if(nums.length === 0) return 0;
+   return nums.reduce(function(acc, cur) {
+     return acc + cur;
+   }) / nums.length
+ }
+
+
+ /**
+  * find the middle value: sort list and then find the middle
+  */
+ function findMedian(nums) {
+  nums.sort((a,b) => a-b);
+  let middleIndex = Math.floor(nums.length / 2);
+  let median;
+  if (nums.length % 2 === 0) {
+    median = (nums[middleIndex] + nums[middleIndex - 1]) /2;
+  } else {
+    median = nums[middleIndex];
+  }
+   return median;
+ }
+
+ module.exports = {
+  createFrequencyCounter,
+  findMean,
+  findMedian,
+  findMode,
+  convertAndValidateNumsArray
+};
+
+
+let example2 = [1,2,4,2,1,4,6,9]
+let example = [1,2,1,1,1,'a', 'a', 'a', 'a', 'a']
+console.log('example', example)
+// console.log(findMedian(example2))
+
+// console.log(findMean(example2))
+// console.log(findMode(example))
+console.log(createFrequencyCounter(example))
+// console.log(convertAndValidateNumsArray(example2))
