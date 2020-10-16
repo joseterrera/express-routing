@@ -16,11 +16,13 @@ In this case, it will return an error
 ### To start this app:
 
 1. Clone or download this project
-2. Run `npm init`
-3. Run `npm install express`
-4. Run `npm install --global nodemon`
+2. Start your node application `npm init`
+3. Install express `npm install express`
+4. Install globally nodemon `npm install --global nodemon`
 5. Run `nodemon app.js`
 
 
-### To Run the tests:
+### To Run the tests on your terminal:
 
+1. Install Jest globally: `npm i --global jest`
+2. Run `jest helpers.test.js`
