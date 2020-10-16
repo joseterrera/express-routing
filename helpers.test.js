@@ -15,10 +15,10 @@ describe('#findMedian', function() {
 
 describe('#findMean', function() {
   it("finds the mean of an empty array", function() {
-    expect(findMean([]).toEqual(0))
+    expect(findMean([])).toEqual(0)
   })
   it('finds the mean of an array of numbers', function() {
-    expect(findMean([1,-1, 4,1])).toEqual(1.5)
+    expect(findMean([1,-1, 4,2])).toEqual(1.5)
   })
 })
 

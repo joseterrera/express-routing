@@ -23,7 +23,7 @@ function findMode(arr) {
       count = freqCounter[key]
     }
   }
-  return mostFrequent
+  return +mostFrequent;
 }
 
 /**
@@ -81,10 +81,10 @@ function findMode(arr) {
 
 let example2 = [1,2,4,2,1,4,6,9]
 let example = [1,2,1,1,1,'a', 'a', 'a', 'a', 'a']
-console.log('example', example)
+// console.log('example', example)
 // console.log(findMedian(example2))
 
 // console.log(findMean(example2))
 // console.log(findMode(example))
-console.log(createFrequencyCounter(example))
+// console.log(createFrequencyCounter(example))
 // console.log(convertAndValidateNumsArray(example2))

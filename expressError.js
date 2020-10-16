@@ -9,3 +9,5 @@ class ExpressError extends Error {
     console.error(this.stack);
   }
 }
+
+module.exports = ExpressError;
